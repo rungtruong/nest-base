@@ -15,10 +15,10 @@ export class AuthController {
   ) {
   }
 
-  @UseGuards(LocalAuthGuard)
+  // @UseGuards(LocalAuthGuard)
   @Post('/login')
   login(@Request() request): Promise<{ accessToken: string }> {
-    return this.authService.generateJwtToken(request.user)
+    return this.authService.generateJwtToken(request)
   }
 
   @UseGuards(JwtAuthGuard)
