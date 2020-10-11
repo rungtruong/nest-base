@@ -1,7 +1,7 @@
 import { BaseEntity, Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, Unique, UpdateDateColumn } from 'typeorm'
 import { Exclude, Expose } from 'class-transformer'
 
-@Entity({ name: 'users' })
+@Entity({ name: 'tbl_users' })
 export class User extends BaseEntity {
   @PrimaryGeneratedColumn()
   id: number
