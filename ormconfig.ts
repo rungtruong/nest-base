@@ -11,4 +11,5 @@ export = {
   cli: {
     migrationsDir: 'src/database/migrations',
   },
+  charset: 'utf8mb4',
 };
